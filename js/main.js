@@ -8,7 +8,7 @@ function generateBirthdayWish() {
     // Check if the entered name is correct
     if (isCorrectName(name)) {
         // Fetch random birthday wish from the local wishes.json file
-        fetch('../js/wishes.json')
+        fetch('wishes.json')
             .then(response => response.json())
             .then(data => {
                 // Choose a random wish from the fetched data
